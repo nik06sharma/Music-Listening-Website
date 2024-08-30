@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./home.css" />
+    <script>
+      function myfunction()
+      {
+        window.location.replace("loginform.html");
+      }
+    </script>
+    <title>Noisa</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">n<span>o</span>isa</div>
+      <div class="search-engine">
+        <input type="text" id="search-field">
+        <button>Search</button>
+      </div>
+      <div class="navigation-links">
+        <a href="">Home</a>
+        <a href="#About-us">About Us</a>
+        <a href="language.html">Albums</a>
+        <a href="#Contact">Contact</a>
+        <button onclick="myfunction()">Login/Sign Up</button>
+        
+      </div>
+    </nav>
+    <div>
+      <section id="home">
+        <div class="out">
+          <div class="in">
+            <img src="./music-bg.jpg" alt="" />
+          </div>
+          <h1>Where words fail,<br />music speaks</h1>
+          <img src="./logos/whatsapp.png" alt="" id="whatsapp" />
+          <img src="./logos/instagram.png" alt="" id="instagram" />
+        </div>
+      </section>
+      <section id="About-us">
+        <h3>About Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum
+          voluptate voluptatem aut impedit corporis ratione, architecto
+          laboriosam, alias fugiat illo eius ex dolorum accusamus.
+        </p>
+        
+        <button>Read more</button>
+      </section>
+      <section id="Contact">
+        <h3>Contact Us</h3>
+        <form action="">
+          <aside class="form">
+            <aside class="left">
+                <label for="name">Name</label>
+                <br />
+                <input type="text" name="name" id="name" required/>
+                <div></div>
+                <label for="email">Email</label>
+                <br />
+                <input type="email" name="email" id="email" required/>
+                <div></div>
+                <label for="phone">Phone</label>
+                <br />
+                <input type="number" name="phone" id="phone"  required/>
+                <div></div>
+              </aside>
+              <aside class="right">
+                <label for="message">Message</label>
+                <br />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="100"
+                  rows="15"
+                  required></textarea>
+              </aside>
+          </aside>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
